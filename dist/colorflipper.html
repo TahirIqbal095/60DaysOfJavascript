@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-body" style="background-color: #EEEEEE;">
+
+    <nav class="bg-white shadow-sm">
+        <div class="text-center p-4">
+            <h1 class="text-2xl font-bold text-blue-500">Color Flipper</h1>
+        </div>
+    </nav>
+
+    <main class="">
+        <div class="container mx-auto min-h-screen flex flex-col justify-center items-center text-center">
+            <p class="text-4xl font-semibold text-white bg-gray-800 p-4 rounded-md" id="text-el">Background Color : </p>
+            <div class="mt-8">
+                <button onclick="backgroundColorFlipper()" class="px-8 py-4 bg-white text-gray-800 rounded-md text-sm font-semibold border shadow-sm hover:bg-gray-800 hover:text-white active:ring-2 active:ring-gray-800 active:ring-offset-2">Click Me</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

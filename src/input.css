@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+
+    --clr-primary: hsl(215,27.9%,16.9%);
+
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 800;
+
+    --fs-body: 0.95rem;
+    --fs-primary-heading: 2.5rem;
+    --fs-secondary-heading: 1.85rem;
+    --fs-button: 1.05rem;
+
+}
+
+/* general styling */
+
+body{
+    font-size: var(--fs-body);
+    color: var(--clr-primary);
+}
+
+p {
+    max-width: 44ch;
+    opacity: 0.8;
+    margin-inline: auto;
+}
+
+h1,
+h2,
+h3{
+    opacity: 0.8;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* utility classes */
+
+.primary-heading{
+    font-size: var(--fs-primary-heading);
+}
+
+.secondary-heading{
+    font-size: var(--fs-secondary-heading);
+}
+
+.font-button{
+    font-size: var(--fs-button);
+}
+
+.fw-regular{
+    font-weight:var(--fw-regular);
+}
+.fw-semi-bold{
+    font-weight: var(--fw-semibold);
+}
+.fw-bold{
+    font-weight: var(--fw-bold);
+}
+
+/* button */
+
+.btn{
+    padding: 0.75rem 2.5rem;
+    color: white;
+    border-radius: 0.75rem;
+    letter-spacing: 0.06em;
+}
