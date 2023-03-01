@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="bg-gray-100">
+        <div class="container mx-auto min-h-screen flex flex-col justify-center items-center space-y-8">
+            <h1 id="counter-el" class="primary-heading fw-semi-bold | text-4xl">Counter</h1>
+            <p id="number-el" class="fw-semi-bold | text-4xl">0</p>
+            <div class="onlySm:flex onlySm:flex-col gap-4 space-x-4">
+                <button onclick="decrement()" class="px-6 py-2 border-2 border-gray-900 rounded-md text-base tracking-wider hover:bg-gray-800 hover:text-white ">Decrease</button>
+                <button onclick="reset()" class="px-6 py-2 border-2 border-gray-900 rounded-md text-base tracking-wider hover:bg-gray-800 hover:text-white ">Reset</button>
+                <button onclick="increment()" class="px-6 py-2 border-2 border-gray-900 rounded-md text-base tracking-wider hover:bg-gray-800 hover:text-white ">Increase</button>
+            </div>
+           
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>

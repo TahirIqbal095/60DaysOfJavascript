@@ -1,4 +1,6 @@
 
+// color Flipper
+
 let textEl = document.getElementById("text-el")
 
 let bgColors = ["#804674", "#609966", "#5D3891", "#609EA2", "#EA8FEA"]
@@ -19,4 +21,34 @@ function backgroundColorFlipper(){
     }
 
     document.body.style.backgroundColor = bgColors[num]
+}
+
+// counter
+
+let numberEl = document.getElementById("number-el")
+
+let count = 0
+
+function increment(){
+    count += 1
+    numberEl.textContent = count
+    if(count > 0){
+        numberEl.style = "color: green;"
+    }
+}
+
+function decrement(){
+    count -= 1
+    numberEl.textContent = count
+    if(count < 0){
+        numberEl.style = "color: red;"
+    }
+}
+
+function reset(){
+    count = 0
+    numberEl.textContent = count
+    if(count == 0){
+        numberEl.style = "color: black;"
+    }
 }
