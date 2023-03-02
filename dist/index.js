@@ -61,7 +61,7 @@ let paraEl = document.getElementById("para-el")
 let imgEl = document.getElementById("img-el")
 
 let employee1 = {
-    name: "Susan Smith",
+    name: "Adam Smith",
     profession: "Web developer",
     review: "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag."
 }
@@ -99,6 +99,7 @@ function nextEl() {
         nameEl.textContent = allEmployees[num].name
         professionEl.textContent = allEmployees[num].profession
         paraEl.textContent = allEmployees[num].review
+        imgEl.src="images/randomperson"+num+".jpeg"
         num += 1
     }
 }
@@ -109,6 +110,7 @@ function previousEl() {
         nameEl.textContent = allEmployees[num].name
         professionEl.textContent = allEmployees[num].profession
         paraEl.textContent = allEmployees[num].review
+        imgEl.src="images/randomperson"+num+".jpeg"
         
     }     
 }
@@ -119,6 +121,7 @@ function randomBtn(){
     nameEl.textContent = allEmployees[randomNumber].name
     professionEl.textContent = allEmployees[randomNumber].profession
     paraEl.textContent = allEmployees[randomNumber].review
+    imgEl.src="images/randomperson"+randomNumber+".jpeg"
 }
 
 
