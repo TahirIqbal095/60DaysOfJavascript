@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <article class="bg-slate-200 min-h-screen flex justify-center items-center">
+        <div class="text-center m-6">
+            <h1 class="review primary-heading fw-semi-bold | p-1">Our reviews</h1>
+
+            <div class="max-w-max mx-auto text-center bg-white mt-12 p-8 rounded-lg shadow-xl">
+                <div class="img-container">
+                    <img class="person-img" src="images/randomPerson1.jpeg" alt="img">
+                </div>
+                
+                <h3 id="name-el" class="text-xl leading-5 tracking-widest">Susan Smith</h3>
+                <h4 id="profession-el" class="text-xs mt-1 text-blue-500">Web developer</h4>
+
+                <p id="para-el" class="max-w-[64ch] mt-4">I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry</p>
+
+                <div class="mt-4 flex gap-8 justify-center items-center text-blue-400">
+
+                    <button onclick="previousEl()">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios
+                            </span>
+                    </button>
+
+                    <button onclick="nextEl()">
+                        <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                    </button>
+                </div>
+
+                <button class="font-button | mt-4 px-6 py-1 bg-blue-500 text-white rounded-lg shadow-lg">Random</button>
+            </div>
+
+        </div>
+    </article>
+
+    <script src="index.js"></script>
+</body>
+</html>

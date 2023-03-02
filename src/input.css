@@ -28,7 +28,6 @@ body{
 }
 
 p {
-    max-width: 44ch;
     opacity: 0.8;
     margin-inline: auto;
 }
@@ -39,6 +38,22 @@ button,
 select,
 a {
     -webkit-tap-highlight-color: transparent;
+}
+
+.review {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.review:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 4px solid 	
+    hsl(217.2,91.2%,59.8%);
 }
 
 
@@ -74,4 +89,38 @@ a {
     color: white;
     border-radius: 0.75rem;
     letter-spacing: 0.06em;
+}
+
+/* Carousel */
+
+.img-container{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.img-container::before{
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: -0.5rem;
+    width: 100%;
+    height: 100%;
+    background: hsl(217.2,91.2%,59.8%);
+    border-radius: 50%;
+}
+
+.person-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-container::after{
+
 }
