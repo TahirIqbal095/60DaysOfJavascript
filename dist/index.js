@@ -58,6 +58,7 @@ function reset() {
 let nameEl = document.getElementById("name-el")
 let professionEl = document.getElementById("profession-el")
 let paraEl = document.getElementById("para-el")
+let imgEl = document.getElementById("img-el")
 
 let employee1 = {
     name: "Susan Smith",
@@ -83,9 +84,15 @@ let employee4 = {
     review: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic."
 }
 
-let allEmployees = [employee2, employee3, employee4]
+let allEmployees = [employee1, employee2, employee3, employee4]
 let totalEmloyees = allEmployees.length
-let num = 0
+let num = 1
+
+
+function randomNumberFunction(){
+    let randomNum = Math.floor(Math.random() * 4)
+    return randomNum
+}
 
 function nextEl() {
     if (num < totalEmloyees) {
@@ -94,6 +101,24 @@ function nextEl() {
         paraEl.textContent = allEmployees[num].review
         num += 1
     }
+}
+
+function previousEl() {
+    if (num > 0){
+        num -= 1
+        nameEl.textContent = allEmployees[num].name
+        professionEl.textContent = allEmployees[num].profession
+        paraEl.textContent = allEmployees[num].review
+        
+    }     
+}
+
+function randomBtn(){
+    let randomNumber = randomNumberFunction()
+
+    nameEl.textContent = allEmployees[randomNumber].name
+    professionEl.textContent = allEmployees[randomNumber].profession
+    paraEl.textContent = allEmployees[randomNumber].review
 }
 
 
