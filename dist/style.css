@@ -623,8 +623,8 @@ video {
   justify-content: center;
 }
 
-.gap-16{
-  gap: 4rem;
+.gap-12{
+  gap: 3rem;
 }
 
 .gap-4{
@@ -633,16 +633,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-12{
-  gap: 3rem;
-}
-
-.space-x-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]){
