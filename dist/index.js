@@ -89,7 +89,7 @@ let totalEmloyees = allEmployees.length
 let num = 1
 
 
-function randomNumberFunction(){
+function randomNumberFunction() {
     let randomNum = Math.floor(Math.random() * 4)
     return randomNum
 }
@@ -99,29 +99,38 @@ function nextEl() {
         nameEl.textContent = allEmployees[num].name
         professionEl.textContent = allEmployees[num].profession
         paraEl.textContent = allEmployees[num].review
-        imgEl.src="images/randomperson"+num+".jpeg"
+        imgEl.src = "images/randomperson" + num + ".jpeg"
         num += 1
     }
 }
 
 function previousEl() {
-    if (num > 0){
+    if (num > 0) {
         num -= 1
         nameEl.textContent = allEmployees[num].name
         professionEl.textContent = allEmployees[num].profession
         paraEl.textContent = allEmployees[num].review
-        imgEl.src="images/randomperson"+num+".jpeg"
-        
-    }     
+        imgEl.src = "images/randomperson" + num + ".jpeg"
+
+    }
 }
 
-function randomBtn(){
+function randomBtn() {
     let randomNumber = randomNumberFunction()
 
     nameEl.textContent = allEmployees[randomNumber].name
     professionEl.textContent = allEmployees[randomNumber].profession
     paraEl.textContent = allEmployees[randomNumber].review
-    imgEl.src="images/randomperson"+randomNumber+".jpeg"
+    imgEl.src = "images/randomperson" + randomNumber + ".jpeg"
 }
 
+// Navbar
+
+let hamburgerMenu = document.getElementById("hamburger-menu")
+let btnEl = document.getElementById("btn")
+
+btnEl.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("hidden")
+    hamburgerMenu.classList.toggle("flex")
+})
 

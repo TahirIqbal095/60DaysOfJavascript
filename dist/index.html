@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -15,15 +15,15 @@
     <header class="mt-8">
         <div class="container mx-auto md:flex justify-center items-center text-center gap-12 space-y-12 p-6">
             <div class="space-y-8">
-                <h1 class="primary-heading fw-bold | ">60 Days of <span
-                        class="underline decoration-teal-500">Javascript</span></h1>
+                <h1 class="primary-heading fw-bold | text-gray-700">60 Days of <span
+                        class="underline decoration-indigo-500">Javascript</span></h1>
 
-                <p class="tracking-normal max-w-[44ch]">60 Days of Javascript is a <span
-                        class="text-lg italic underline decoration-teal-500">Challenge</span> where i will build as many
+                <p class="tracking-normal max-w-[44ch] opacity-75">60 Days of Javascript is a <span
+                        class="text-lg italic decoration-indigo-500">Challenge</span> where i will build as many
                     Javascript projects as i can. These 60 days will be quiet challenging and exciting as well </p>
 
-                <a href="#"
-                    class="font-button fw-semi-bold btn | flex justify-center items-center mx-auto max-w-max bg-teal-500 shadow-lg hover:bg-teal-400 hover:scale-105 duration-500">View
+                <a href="#projects"
+                    class="font-button fw-semi-bold btn | flex justify-center items-center mx-auto max-w-max bg-indigo-500 shadow-lg hover:bg-indigo-400 hover:scale-105 duration-500">View
                     Projects</a>
             </div>
             <div>
@@ -35,34 +35,44 @@
     <!-- main section -->
 
     <main class="mt-12">
-        <section class="bg-gray-200">
-            <div class="mx-auto px-16 py-8">
+        <section id="projects" class="bg-indigo-50">
+            <div class="mx-auto p-8">
+
                 <div class="text-center">
-                    <h2 class="secondary-heading fw-semi-bold | underline decoration-teal-500">DOM Projects</h2>
+                    <h2 class="secondary-heading fw-semi-bold | text-gray-700">DOM Projects</h2>
+                    <hr class="mx-auto border-b-2 border-indigo-500 w-[75px]">
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-12 mt-8">
-                    <div class="rounded shadow-lg overflow-hidden hover:scale-105 duration-500">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+
+
+                    <div class="mx-auto rounded shadow-lg overflow-hidden hover:scale-105 duration-500 max-w-max">
                         <a href="colorflipper.html">
                             <img class="w-[25rem] h-[20rem] object-cover" src="images/color-flipper.PNG" alt="">
-                            <p class="font-semibold | bg-teal-500 py-2 text-white text-center">Color flipper</p>
-                           </a>
+                            <p class="font-semibold | bg-indigo-500 py-2 text-white text-center">Color flipper</p>
+                        </a>
                     </div>
 
-                    <div class="rounded shadow-lg overflow-hidden hover:scale-105 duration-500">
+                    <div class="mx-auto rounded shadow-lg overflow-hidden hover:scale-105 duration-500 max-w-max">
                         <a href="counter.html">
                             <img class="w-[25rem] h-[20rem] object-cover" src="images/counter.PNG" alt="">
-                            <p class="font-semibold | bg-teal-500 py-2 text-white text-center">Counter</p>
-                           </a>
+                            <p class="font-semibold | bg-indigo-500 py-2 text-white text-center">Counter</p>
+                        </a>
                     </div>
 
-                    <div class="rounded shadow-lg overflow-hidden hover:scale-105 duration-500">
+                    <div class="mx-auto rounded shadow-lg overflow-hidden hover:scale-105 duration-500 max-w-max">
                         <a href="reviews.html">
                             <img class="w-[25rem] h-[20rem] object-cover" src="images/review.PNG" alt="">
-                            <p class="font-semibold | bg-teal-500 py-2 text-white text-center">Reviews / Quotes</p>
-                           </a>
+                            <p class="font-semibold | bg-indigo-500 py-2 text-white text-center">Reviews / Quotes</p>
+                        </a>
                     </div>
-                   
+
+                    <div class="mx-auto rounded shadow-lg overflow-hidden hover:scale-105 duration-500 max-w-max">
+                        <a href="navbar.html">
+                            <img class="w-[25rem] h-[20rem] object-cover" src="images/navbar.PNG" alt="">
+                            <p class="font-semibold | bg-indigo-500 py-2 text-white text-center">Navbar</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
