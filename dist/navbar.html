@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="style.css">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/fa432fc678.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,9 +21,10 @@
 
             <div class="hidden md:block">
                 <ul class="flex gap-12 justify-between text-xl">
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
                 </ul>
             </div>
 
@@ -39,14 +42,20 @@
             </div>
 
             <!-- hamburger menu -->
-            <div id="hamburger-menu" class="hidden justify-center bg-orange-500 border-b shadow-lg absolute top-0 right-0 left-0">
+            <div id="hamburger-menu" class="hidden flex-col bg-orange-500 border-b shadow-lg absolute top-0 right-0 left-0">
                 <div class="p-8 mt-12">
                     <ul class="flex flex-col gap-8 text-white font-medium text-xl">
-                        <li>Home</li>
-                        <li>Projects</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
+                </div>
+
+                <div class="flex gap-6 p-8">
+                    <a href="https://github.com/TahirIqbal095"><i class="fa-brands fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/tahir-iqbal-4808b91a3/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://twitter.com/Tahiriqbal095"><i class="fa-brands fa-twitter fa-2x"></i></a>
                 </div>
             </div>
 
