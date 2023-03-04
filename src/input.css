@@ -119,3 +119,9 @@ a {
     border-radius: 50%;
     position: relative;
 }
+
+/* side navbar animation */
+
+#sidebar{
+    transition: all 0.25s ease;
+}
