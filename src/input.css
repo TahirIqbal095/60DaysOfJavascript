@@ -120,8 +120,17 @@ a {
     position: relative;
 }
 
+/* hamburger menu */
+
+
 /* side navbar animation */
 
 #sidebar{
-    transition: width 300ms ease;
+    transition: width 200ms ease;
+}
+
+/* modals */
+
+.card:hover .plus-img{
+    display: inline;
 }

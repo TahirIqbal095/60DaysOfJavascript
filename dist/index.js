@@ -99,7 +99,7 @@ function nextEl() {
         nameEl.textContent = allEmployees[num].name
         professionEl.textContent = allEmployees[num].profession
         paraEl.textContent = allEmployees[num].review
-        imgEl.src = "images/randomperson" + num + ".jpeg"
+        imgEl.src = "images/reviewImages/randomperson" + num + ".jpeg"
         num += 1
     }
 }
@@ -110,7 +110,7 @@ function previousEl() {
         nameEl.textContent = allEmployees[num].name
         professionEl.textContent = allEmployees[num].profession
         paraEl.textContent = allEmployees[num].review
-        imgEl.src = "images/randomperson" + num + ".jpeg"
+        imgEl.src = "images/reviewImages/randomperson" + num + ".jpeg"
 
     }
 }
@@ -132,3 +132,4 @@ let btnEl = document.getElementById("btn")
 btnEl.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("hidden")
 })
+
