@@ -11,38 +11,55 @@
     <script src="https://kit.fontawesome.com/fa432fc678.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-900">
 
     <nav class="relative">
-        <!-- hamburger -->
-        <div class="absolute z-10 right-2 top-2 m-4 bg-blue-500 rounded-md hover:bg-blue-400 cursor-pointer">
-            <button id="sidebar-btn" class="space-y-1 p-4 flex flex-col justify-center items-center">
-                    <div class="border-b-[3px] border-white w-6"></div>
-                    <div class="border-b-[3px] border-white w-6"></div>
-                    <div class="border-b-[3px] border-white w-6"></div>
-            </button>
-           
-        </div>
 
         <!-- hamburger menu -->
-        <div id="sidebar" class="flex flex-col bg-white p-8 w-96 onlySm:w-[100%] min-h-screen">
-            <div>
-                <h1 class="text-3xl">Side <span class="text-blue-500">Navbar</span></h1>
+        <div id="sidebar" class="relative flex flex-col p-4 bg-gray-800 w-24 min-h-screen">
+
+            <div class="w-12 h-12 flex items-center border-2 border-gray-300 rounded-full">
+                <img class="w-11 h-11" src="sidebarImages/tahir.png" alt="img">
             </div>
-            <div class="mt-12">
-                <ul class="flex flex-col text-xl">
-                    <li class="hover:bg-blue-300 hover:text-blue-500 p-4 rounded-md hover:transition-transform hover:translate-x-2 duration-300 ease-in-out"><a href="#">Home</a></li>
-                    <li class="hover:bg-blue-300 hover:text-blue-500 p-4 rounded-md hover:transition-transform hover:translate-x-2 duration-150 ease-in-out"><a href="#">Projects</a></li>
-                    <li class="hover:bg-blue-300 hover:text-blue-500 p-4 rounded-md hover:transition-transform hover:translate-x-2 duration-150 ease-in-out"><a href="#">About</a></li>
-                    <li class="hover:bg-blue-300 hover:text-blue-500 p-4 rounded-md hover:transition-transform hover:translate-x-2 duration-150 ease-in-out"><a href="#">Contact</a></li>
+
+            <button id="open">
+                <img id="toggleImg1" class="absolute -right-3 top-4" src="sidebarImages/open.svg" alt="img">
+                <img id="toggleImg2" class="hidden absolute -right-3 top-4" src="sidebarImages/close.svg" alt="img">
+            </button>
+            
+
+            <div class="">
+                <ul class="flex flex-col gap-14 mt-12 font-medium text-gray-300">
+                    <li>
+                        <a class="flex items-center" href="#">
+                            <img class="min-w-[2rem] mx-2" src="sidebarImages/home.svg" alt="img">
+                            <span class="link-text | hidden ml-6">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center" href="#">
+                            <img class="min-w-[2rem] mx-2" src="sidebarImages/projects.svg" alt="img">
+                            <span class="link-text | hidden ml-6">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center" href="#">
+                            <img class="min-w-[2rem] mx-2" src="sidebarImages/about.svg" alt="img">
+                            <span class="link-text | hidden ml-6">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center" href="#">
+                            <img class="min-w-[2rem] mx-2" src="sidebarImages/contact.svg" alt="img">
+                            <span class="link-text | hidden ml-6">Contact</span>
+                        </a>
+                    </li>
                 </ul>
+                
             </div>
-            <div class="flex justify-center gap-8 mt-auto">
-                <a href="https://github.com/TahirIqbal095"><i class="text-blue-400 hover:text-gray-700 fa-brands fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/tahir-iqbal-4808b91a3/"><i
-                        class="text-blue-400 hover:text-gray-700 fa-brands fa-linkedin fa-2x"></i></a>
-                <a href="https://twitter.com/Tahiriqbal095"><i class="text-blue-400 hover:text-gray-700 fa-brands fa-twitter fa-2x"></i></a>
-            </div>
+
+            <a class="mt-auto flex items-center" href="#"><img class="min-w-[2rem] mx-2" src="sidebarImages/setting.svg" alt="img">
+                <span class="link-text | hidden ml-6 font-medium text-gray-300">Setting</span></a>
         </div>
     </nav>
 
