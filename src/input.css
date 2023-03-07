@@ -122,6 +122,6 @@ a {
 
 /* side navbar animation */
 
-.sidebarAnimation{
-    animation: width 200ms ease;
+#sidebar{
+    transition: width 300ms ease;
 }
