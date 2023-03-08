@@ -131,5 +131,10 @@ let btnEl = document.getElementById("btn")
 
 btnEl.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("hidden")
+
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } })
+    tl.fromTo(".nav-list", { y: "20%" }, { y: "0%", duration: 1 })
 })
+
+
 

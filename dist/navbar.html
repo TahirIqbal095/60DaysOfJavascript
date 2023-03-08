@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="bg-gray-600 text-white shadow-lg">
+    <nav class="text-gray-800 shadow-lg">
         <div class="relative flex justify-between items-center px-8 py-4">
 
             <div>
@@ -29,23 +29,22 @@
             </div>
 
             <button
-                class="hidden md:block text-sm font-medium bg-white text-gray-800 px-8 py-1 rounded-lg border shadow-lg">Hire
+                class="hidden md:block text-sm font-medium bg-white text-gray-800 px-8 py-2 rounded-lg border-2 border-gray-800 shadow-md hover:bg-gray-900 hover:text-white duration-300">Hire
                 Me</button>
 
                 <!-- hamburger icon -->
-            <div class="block md:hidden z-50 bg-white border p-2 rounded">
-                <button id="btn" class="space-y-1 flex flex-col justify-center items-center">
-                    <div class="border-b-[3px] border-gray-600 w-6"></div>
-                    <div class="border-b-[3px] border-gray-600 w-6"></div>
-                    <div class="border-b-[3px] border-gray-600 w-6"></div>
+            <div class="block md:hidden z-50">
+                <button id="btn" class="space-y-1 flex flex-col space-x-2">
+                    <div class="border-b-[3px] border-gray-900 w-8"></div>
+                    <div class="border-b-[3px] border-gray-900 w-6"></div>
                 </button>
             </div>
         </div>
 
         <!-- hamburger menu -->
-        <div id="hamburger-menu" class="hidden bg-gray-600 w-full h-[400px]">
+        <div id="hamburger-menu" class="hidden bg-gray-100 w-full h-[400px]">
             <div class="nav-list | p-8">
-                <ul class="flex flex-col gap-8 text-white font-medium text-xl">
+                <ul class="flex flex-col gap-8 font-medium text-xl">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">About</a></li>
@@ -61,6 +60,7 @@
     </nav>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
 </body>
 
