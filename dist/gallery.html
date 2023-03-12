@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap animation</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- splider js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="splide.min.css">
+</head>
+
+<body class="fs-regular text-clr-100">
+
+    <main>
+        <header>
+            <nav>
+                <h1 class="fw-semi-bold fs-4xl">Gallery</h1>
+                <ul class="nav-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <!-- hamburger icon -->
+                <button class="hamburger">
+                    <img class="hamburger-icon" src="images/galleryImages/hamburger.svg" alt="hamburger">
+                    <img class="hamburger-close-icon hidden" src="images/galleryImages/close.svg" alt="hamburger">
+                </button>
+                <!-- hamburger items -->
+                <ul class="hamburger-items | fw-semi-bold fs-xl">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="heading">
+            <h2 class="fs-2xl mx-auto welcome-msg">Capturing the Wild!</h2>
+        </div>
+
+        <section id="main-carousel" class="splide | main-gallery" aria-label="My Awesome Gallery">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img class="img-el" src="images/galleryImages/image1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="img-el" src="images/galleryImages/image2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="img-el" src="images/galleryImages/image3.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="img-el" src="images/galleryImages/image4.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="img-el" src="images/galleryImages/image5.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="img-el" src="images/galleryImages/image6.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <ul id="thumbnails" class="thumbnails | main-gallery">
+            <li class="thumbnail">
+                <img src="images/galleryImages/image1.jpg" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="images/galleryImages/image2.jpg" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="images/galleryImages/image3.jpg" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="images/galleryImages/image4.jpg" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="images/galleryImages/image5.jpg" alt="">
+            </li>
+            <li class="thumbnail">
+                <img src="images/galleryImages/image6.jpg" alt="">
+            </li>
+        </ul>
+    </main>
+
+    <div class="intro-gallery">
+        <div class="intro-text fs-3xl">
+            <h2 class="hide">
+                <span class="text">Creating Inovation</span>
+            </h2>
+            <h2 class="hide">
+                <span class="text">For Everyday</span>
+            </h2>
+            <h2 class="hide">
+                <span class="text">People</span>
+            </h2>
+        </div>
+    </div>
+    <div class="slider"></div>
+
+    <script src="splide.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
